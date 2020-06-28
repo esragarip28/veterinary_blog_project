@@ -1,0 +1,478 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+            <meta charset="UTF-8">
+            <title>Gallery</title>
+            <style>
+
+                html,body,#cover{
+                    height: 100%;
+
+                }
+
+
+                #cover{
+                    background: no-repeat center center fixed url("image/jakob-owens-FKyHyNowp-4-unsplash.jpg");
+                    background-size: cover;
+                    font-family: 'Mitr', sans-serif;
+                    font-size: 18px;
+                }
+
+                .col-sm-12 h1{
+                    margin-top: 55%;
+                    color: #f1f1f1;
+                    padding: 2%;
+                    font-weight:800;
+                }
+                .col-sm-12 h2{
+                    margin-top:2%;
+                    color:#f1f1f1;
+                    font-size: 55px;
+                    font-weight:800;
+                }
+
+                .portfolio-item {
+                display: block;
+                position: relative;
+                overflow: hidden;
+                max-width: 530px;
+                margin: auto auto 1rem;
+            }
+
+            #portfolio img{
+                width:600px;
+                height: 400px;
+            }
+            .portfolio-item .caption {
+                display: flex;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(33, 37, 41, 0.2);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+
+            .portfolio-item .caption .caption-content {
+                color: #fff;
+                margin: auto 2rem 2rem;
+            }
+
+            .portfolio-item .caption .caption-content h2 {
+                font-size: 0.8rem;
+                text-transform: uppercase;
+            }
+
+            .portfolio-item .caption .caption-content p {
+                font-weight: 300;
+                font-size: 1.2rem;
+            }
+
+            @media (min-width: 992px) {
+                .portfolio-item {
+                    max-width: none;
+                    margin: 0;
+                }
+                .portfolio-item .caption {
+                    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+                    -webkit-clip-path: inset(0px);
+                    clip-path: inset(0px);
+                }
+                .portfolio-item .caption .caption-content {
+                    transition: opacity 0.25s;
+                    margin-left: 5rem;
+                    margin-right: 5rem;
+                    margin-bottom: 5rem;
+                }
+                .portfolio-item img {
+                    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+                    -webkit-clip-path: inset(-1px);
+                    clip-path: inset(-1px);
+                }
+                .portfolio-item:hover img {
+                    -webkit-clip-path: inset(2rem);
+                    clip-path: inset(2rem);
+                }
+                .portfolio-item:hover .caption {
+                    background-color: rgba(29, 128, 159, 0.9);
+                    -webkit-clip-path: inset(2rem);
+                    clip-path: inset(2rem);
+                }}
+
+               #images .column {
+                    float: left;
+                    width: 25%;
+                    padding: 10px;
+                }
+
+                /* Style the images inside the grid */
+               #images .column img {
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+
+               #images .column img:hover {
+                    opacity: 1;
+                }
+                footer{
+                    background-color:#424242;
+                    color: white;
+                    font-family: 'Mitr', sans-serif;
+                    font-size: 16px;
+                }
+                footer a{
+                    color: #f7f7f7;
+                }
+                footer i{
+                    font-size: 20px;
+
+                }
+
+            </style>
+        </head>
+        <body>
+
+
+
+        <section id="cover">
+
+            <!-- nav part-->
+
+            <div class="container">
+                <div class="row">
+                    <nav  style=" background-color:#777777;padding:2%" class="navbar navbar-expand-lg navbar-light   fixed-top">
+                        <a class="navbar-brand" href="#"> <img width="100px;" height="100px" src="" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="homepage.html">HOMEPAGE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">BLOG</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">SERVICES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="team.html">TEAM</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="gallery.html">GALLERY <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">CONTACT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="registry.html">REGISTER</a>
+                                </li>
+
+
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button  class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+                <div class="row  text-center">
+
+                    <div class="col-sm-12">
+                        <h1>Welcome to Our Gallery</h1>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <h2>IT'S NICE TO MEET YOU</h2>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Portfolio -->
+        <section STYLE="padding: 120px 0" class="content-section-2" id="portfolio">
+            <div class="container">
+                <div class="content-section-heading text-center">
+
+                    <h2  class="mb-5">OUR GALLERY
+                        <br>
+                        <hr style="width: 250px;border-top: 5px solid red;"></h2>
+
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                            <span class="caption">
+                              <span class="caption-content">
+                                <h2>BIRDS</h2>
+                                <p class="mb-0">Birds are vertebrate animals adapted for flight. like penguins,chicken ..</p>
+                              </span>
+                            </span>
+                            <img class="img-fluid" src="image/back%20(1).jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                            <span class="caption">
+                              <span class="caption-content">
+                                <h2>ELEPHANTS</h2>
+                                <p class="mb-0">Elephants are mammals of the family Elephantidae and the largest existing land animals</p>
+                              </span>
+                            </span>
+                            <img class="img-fluid" src="image/wildvet.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                            <span class="caption">
+                              <span class="caption-content">
+                                <h2>TIGER OF THE BENGAL</h2>
+                                <p class="mb-0"> The Bengal tiger, also known as the Royal Bengal Tiger or the Indian tiger, is the subspecies with the largest population.</p>
+                              </span>
+                            </span>
+                            <img class="img-fluid" src="image/bengal.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                            <span class="caption">
+                              <span class="caption-content">
+                                <h2>BIRDS</h2>
+                                <p class="mb-0">Birds are vertebrate animals adapted for flight. like penguins,chicken ..</p>
+                              </span>
+                            </span>
+                            <img class="img-fluid" src="image/bb.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                            <span class="caption">
+                              <span class="caption-content">
+                                <h2>REPTILES</h2>
+                                <p class="mb-0">Reptiles are cold-blooded vertebrates. (Vertebrates have backbones.) They have dry skin covered with scales or bony plates and usually lay soft-shelled eggs.</p>
+                              </span>
+                            </span>
+                            <img class="img-fluid" src="image/reptile.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                            <span class="caption">
+                              <span class="caption-content">
+                                <h2>MEERKAT</h2>
+                                <p class="mb-0">Meerkats live in the deserts and grasslands of the southern tip of Africa. They are extremely cute, with bushy, brown-striped fur, a small, pointed face</p>
+                              </span>
+                            </span>
+                            <img class="img-fluid" src="image/mirket%20(1).jpg" alt="">
+                        </a>
+                    </div><div class="col-lg-6">
+                    <a class="portfolio-item" href="#">
+                            <span class="caption">
+                              <span class="caption-content">
+                                <h2>TURTLE</h2>
+                                <p class="mb-0">Turtles are reptiles of the order Testudines characterized by a special bony or cartilaginous shell developed from their ribs and acting as a shield.</p>
+                              </span>
+                            </span>
+                        <img class="img-fluid" src="image/reptile2.jpg" alt="">
+                    </a>
+                </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                            <span class="caption">
+                              <span class="caption-content">
+                                <h2>CATS</h2>
+                                <p class="mb-0">The cat (Felis catus) is a domestic species of small carnivorous mammal.</p>
+                              </span>
+                            </span>
+                            <img class="img-fluid" src="image/cat1.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div  style="padding:150px 0" class="container">
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/vet2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/veterinary.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/veterinary2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/v1%20(4).jpg" class="d-block w-100" alt="...">
+                    </div><div class="carousel-item">
+                    <img src="image/v1%20(1).jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer style="margin-top: 60px"  class="page-footer font-small mdb-color pt-4">
+
+            <!-- Footer Links -->
+            <div  style=";padding-top: 60px"class="container text-center text-md-left">
+
+                <!-- Footer links -->
+                <div class="row text-center text-md-left mt-3 pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Esra Veterinary</h6>
+                        <p>With our experience of more than 20 years and our experienced employees, we always serve you with the best technologies and techniques.</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
+                        <p>
+                            <a  style="color: #f7f7f7" href="#!">Surgery</a>
+                        </p>
+                        <p>
+                            <a  style="color: #f7f7f7" href="#!">Sterilization</a>
+                        </p>
+                        <p>
+                            <a style="color: #f7f7f7" href="#!">Animals Care</a>
+                        </p>
+                        <p>
+                            <a style="color: #f7f7f7" href="#!">Anesthesiar</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Useful Article Links</h6>
+                        <p>
+                            <a href="https://www.careerexplorer.com/careers/veterinarian/">About Veterinary</a>
+                        </p>
+                        <p>
+                            <a href="https://blog.smartpakequine.com/category/ask-the-vet/">Animals and People</a>
+                        </p>
+                        <p>
+                            <a href="https://www.journals.elsevier.com/the-veterinary-journal">The Veterinary Journal</a>
+                        </p>
+                        <p>
+                            <a href="https://www.vetsci.org">Veterinary Science</a>
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p>
+                            <i class="fas fa-home mr-3"></i> Giresun ,Tirebolu ,Turkey</p>
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i> example_esragarip28@gmail.com</p>
+                        <p>
+                            <i class="fas fa-phone mr-3"></i> + 90 555 555 55 55</p>
+                        <p>
+                            <i class="fas fa-print mr-3"></i> + 90 555 555 55 54</p>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Footer links -->
+
+                <hr>
+
+                <!-- Grid row -->
+                <div class="row d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-7 col-lg-8">
+
+                        <!--Copyright-->
+                        <p class="text-center text-md-left">© 2020 Copyright:
+                            <a href="#">
+                              EsraGarip
+                            </a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 ml-lg-0">
+
+                        <!-- Social buttons -->
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="https://www.instagram.com/accounts/emailsignup/" class="btn-floating btn-sm rgba-white-slight mx-3">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://twitter.com/login?lang=tr" class="btn-floating btn-sm rgba-white-slight mx-3">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://myaccount.google.com/profile?pli=1" class="btn-floating btn-sm rgba-white-slight mx-3">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a  href="https://www.linkedin.com/home" class="btn-floating btn-sm rgba-white-slight mx-3">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+        </footer>
+
+
+        </body>
+        </html>

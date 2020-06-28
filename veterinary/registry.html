@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        html,body,#cover{
+            height: 100%;
+
+        }
+
+
+        #cover{
+            background: no-repeat center center fixed url("image/vishu-gowda-KVmLVXWTICY-unsplash.jpg");
+            background-size: cover;
+            font-family: 'Mitr', sans-serif;
+            font-size: 18px;
+        }
+
+        .col-sm-12 h1{
+            margin-top: 55%;
+            color: #f1f1f1;
+            padding: 2%;
+            font-weight:800;
+        }
+        .col-sm-12 h2{
+            margin-top:2%;
+            color:#f1f1f1;
+            font-size: 60px;
+            font-weight:800;
+        }
+
+        footer{
+            background-color:#424242;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+        }
+        footer a{
+            color: #f7f7f7;
+        }
+        footer i{
+            font-size: 20px;
+
+        }
+
+     #registry-form{
+         padding: 120px 0;
+         border-style: none;
+             }
+        .form-group input,.form-group textarea{
+            border: none;
+
+        }
+        hr{
+            padding: 30px;
+            width: 100%;
+            height: 5px;
+        }
+        .label{
+            font-size: 18px;
+            font-family: 'Mitr', sans-serif;
+
+        }
+        .form-check{
+          margin-bottom: 20px;
+        }
+        .error{
+            color: red;
+           font-size: 20px;
+        }
+        .success{
+            color: green;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<section id="cover">
+
+    <!-- nav part-->
+
+    <div class="container">
+        <div class="row">
+            <nav  style=" background-color:#777777;padding:2%" class="navbar navbar-expand-lg navbar-light   fixed-top">
+                <a class="navbar-brand" href="#"> <img width="100px;" height="100px" src="" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="homepage.html">HOMEPAGE</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="registry.html">REGISTER <span class="sr-only">(current)</span></a>
+                        </li>
+
+
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="row  text-center">
+
+            <div class="col-sm-12">
+                <h1>Welcome to Our Registry Page</h1>
+            </div>
+
+            <div class="col-sm-12">
+                <h2>IT'S NICE TO MEET YOU</h2>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="registry-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center" style="font-family: 'Mitr', sans-serif;font-size: 35px;margin-bottom: 50px">
+                    <p>REGISTRY FORM</p>
+                </div>
+                <form id="form_"  action="thank.html">
+
+                    <div class="form-group row label  ">
+
+                        <label for="username" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+
+                                <input   type="text" class="form-control" id="username" placeholder="Please enter your name...">
+                            <div>
+                                <small ></small>
+
+                            </div>
+                            </div>
+                        <hr>
+                    </div>
+                    <div class="form-group row label ">
+                        <label for="surname" class="col-sm-2 col-form-label">Surname</label>
+                        <div class="col-sm-10 ">
+                            <input type="text" class="form-control" id="surname" placeholder="Please enter your username">
+                            <div>
+                               <small></small>
+
+                            </div>
+
+
+                        </div>
+
+                        <hr>
+                    </div>
+                    <div class="form-group row label ">
+                        <label for="phone" class="col-sm-2 col-form-label">Phone Number</label>
+                        <div class="col-sm-10 ">
+                            <input type="text" class="form-control" id="phone" placeholder="Please enter your phone number">
+                            <div>
+                                <small></small>
+
+                            </div>
+
+
+                        </div>
+
+                        <hr>
+                    </div>
+                    <div class="form-group row label">
+                        <label for="email" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input  class="form-control" id="email" placeholder="Please enter your email address">
+                            <div>
+                              <small></small>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="form-group row label">
+                        <label for="password" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input  type="password" class="form-control" id="password" placeholder="Please enter your password">
+                            <div>
+                            <small></small>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="form-group row label">
+                        <label for="date" class="col-sm-2 col-form-label">Date of Birthday</label>
+                        <div class="col-sm-10 ">
+                            <input class="form-control" type="text"  id="date" placeholder="MM/DD/YYYY">
+                            <div>
+                                <small></small>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row form-group label">
+                        <label class="col-sm-2 col-form-label" for="sel1">Deparmant</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="sel1">
+                                <option>Computer Science</option>
+                                <option>Medicine</option>
+                                <option>Engineering</option>
+                                <option>Veterinary</option>
+                            </select>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row form-group label">
+                        <label class="col-sm-2 col-form-label" for="message">Message</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" name="" id="message" cols="100" rows="5"></textarea>
+
+                        </div>
+                        <hr>
+                    </div>
+
+
+
+                    <fieldset class="form-group label ">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0 label">Gender</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Female
+                                    </label>
+                                </div>
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+                                    <label class="form-check-label" for="gridRadios3">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div style="margin-right: 20px" class="form-group row label">
+                        <div class="col-sm-2 ">Hobies</div>
+                        <div class="col-sm-10 form-check-inline">
+                            <div class="form-check" >
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                   Technology
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                <label class="form-check-label"  for="gridCheck2">
+                                    Science
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                <label class="form-check-label" for="gridCheck3">
+                                   Books
+                                </label>
+                            </div>
+
+
+                        </div>
+                        <div class="col-sm-10 form-check-inline">
+                            <div class="form-check" >
+                                <input class="form-check-input" type="checkbox" id="gridCheck4">
+                                <label class="form-check-label" for="gridCheck4">
+                                    PC Games
+
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck5">
+                                <label class="form-check-label"  for="gridCheck5">
+                                 Movies
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck6">
+                                <label class="form-check-label" for="gridCheck6">
+                                 Sports
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div style="padding: 60px 0" class="form-group row "   >
+                        <div class="col-sm-10">
+                            <button  type="submit"  style="width: 100px"  class="btn btn-primary">Submit</button>
+
+
+                            <button style="margin-left: 20px;width: 100px" class="btn btn-primary" type="reset" >
+                                Reset
+                            </button>
+                            <button class="btn btn-primary"; style="width: 100px; margin-left: 20px">
+                                <a style="text-decoration: none;color: #f1f1f1" href="homepage.html">Home</a>
+                            </button>
+
+
+
+                        </div>
+                    </div>
+                </form>
+            </div></div></div></section>
+
+
+
+<!-- Footer -->
+<footer style="margin-top: 60px"  class="page-footer font-small mdb-color pt-4">
+
+    <!-- Footer Links -->
+    <div  style=";padding-top: 60px"class="container text-center text-md-left">
+
+        <!-- Footer links -->
+        <div class="row text-center text-md-left mt-3 pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Esra Veterinary</h6>
+                <p>With our experience of more than 20 years and our experienced employees, we always serve you with the best technologies and techniques.</p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
+                <p>
+                    <a  style="color: #f7f7f7" href="#!">Surgery</a>
+                </p>
+                <p>
+                    <a  style="color: #f7f7f7" href="#!">Sterilization</a>
+                </p>
+                <p>
+                    <a style="color: #f7f7f7" href="#!">Animals Care</a>
+                </p>
+                <p>
+                    <a style="color: #f7f7f7" href="#!">Anesthesiar</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Useful Article Links</h6>
+                <p>
+                    <a href="https://www.careerexplorer.com/careers/veterinarian/">About Veterinary</a>
+                </p>
+                <p>
+                    <a href="https://blog.smartpakequine.com/category/ask-the-vet/">Animals and People</a>
+                </p>
+                <p>
+                    <a href="https://www.journals.elsevier.com/the-veterinary-journal">The Veterinary Journal</a>
+                </p>
+                <p>
+                    <a href="https://www.vetsci.org">Veterinary Science</a>
+                </p>
+            </div>
+
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p>
+                    <i class="fas fa-home mr-3"></i> Giresun ,Tirebolu ,Turkey</p>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i> esra.garip4133@gmail.com</p>
+                <p>
+                    <i class="fas fa-phone mr-3"></i> + 90 555 555 55 55</p>
+                <p>
+                    <i class="fas fa-print mr-3"></i> + 90 555 555 55 54</p>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Footer links -->
+
+        <hr>
+
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8">
+
+                <!--Copyright-->
+                <p class="text-center text-md-left">© 2020 Copyright:
+                    <a href="#">
+                       EsraGarip
+                    </a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0">
+
+                <!-- Social buttons -->
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/accounts/emailsignup/" class="btn-floating btn-sm rgba-white-slight mx-3">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/login?lang=tr" class="btn-floating btn-sm rgba-white-slight mx-3">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://myaccount.google.com/profile?pli=1" class="btn-floating btn-sm rgba-white-slight mx-3">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a  href="https://www.linkedin.com/home" class="btn-floating btn-sm rgba-white-slight mx-3">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+</footer>
+
+<script>
+
+    const form=document.getElementById('form_');
+    const username=document.getElementById('username');
+    const surname=document.getElementById('surname')
+    const email=document.getElementById('email');
+    const password=document.getElementById('password');
+    const phone=document.getElementById('phone');
+    const date=document.getElementById('date');
+
+    form.addEventListener('submit',(e)=>{
+        e.preventDefault();
+         checkValue();
+
+
+
+    });
+
+    function checkValue() {
+        let counter=0;
+
+        const usernameValue=username.value.trim();
+        const surnameValue=surname.value.trim();
+        const emailValue=email.value.trim();
+        const passwordValue=password.value.trim();
+        const phoneValue=phone.value.trim();
+        const dateValue=date.value.trim();
+
+
+        if (usernameValue ===''){
+
+            setErrorFor(username,'username cannot be blank');
+
+        }
+        else if (!usernameValidation(usernameValue)){
+            setErrorFor(username,'name should not include digits and special characters')
+
+        }
+        else{
+            setSuccessFor(username,"valid ");
+            counter++;
+
+        }
+
+        if (surnameValue===''){
+            setErrorFor(surname,'surname cannot be blank')
+        }
+        else if(/\d/.test(surnameValue) ||/[^0-9a-zA-Z]/.test(surnameValue)){
+            setErrorFor(surname,'should not use digit character or special character ')
+
+        }
+
+        else{
+            setSuccessFor(surname,'Valid')
+            counter++;
+        }
+        if (phoneValue===''){
+            setErrorFor(phone,'phone number cannot be blank')
+        }
+        else if(phoneValue.length<11){
+            setErrorFor(phone,'phone number should be 11  character')
+
+        }
+        else if(phoneValue.length>11){
+            setErrorFor(phone,'phone number should be 11 character')
+
+        }
+       else if (!/\d{11}/.test(phoneValue)){
+           setErrorFor(phone,'only should be digits Please should not use strings,special characters')
+
+
+        }
+        else{
+            setSuccessFor(phone,'valid');
+              counter++;
+        }
+        if (emailValue===''){
+            setErrorFor(email,"Email cannot be blank");
+        }
+        else if(!isMail(emailValue)){
+            setErrorFor(email,"email should be like this muhammed@gamil.com");
+        }
+        else{
+            setSuccessFor(email,"Valid");
+            counter++;
+        }
+        if (passwordValue===''){
+            setErrorFor(password,'password cannot be blank');
+        }
+        else if(password.value.length<8){
+            setErrorFor(password,"password should include at least 8 characters");
+
+        }
+        else if(password.value.length>16){
+            setErrorFor(password,"password should include at most 16 characters");
+        }
+        else if (!/[A-Z]/.test(passwordValue)){
+            setErrorFor(password,' should be at least one uppercase');
+
+        }
+        else if(!/[a-z]/.test(passwordValue)){
+            setErrorFor(password,'should be at least one lowercase');
+
+        }
+       else if(!/\d/.test(passwordValue)){
+           setErrorFor(password,'should be at least one digit characters')
+
+        }
+       else if(!/[^0-9a-zA-Z]/.test(passwordValue)){
+           setErrorFor(password,'should be at least one special character')
+
+        }
+
+
+        else{
+            setSuccessFor(password,'Valid');
+            counter++;
+        }
+
+
+        if (dateValue===''){
+            setErrorFor(date,'date cannot be blank');
+        }
+       else if (!/^\d{2}\/\d{2}\/\d{4}$/.test(dateValue)){
+
+           setErrorFor(date,'should write like this 09/05/1996')
+
+        }
+       else if (!isValidDate(dateValue)){
+           setErrorFor(date,'year should be in this range 1930-2020 and month bigger than 0 and smaller than 12')
+
+        }
+       else if (!isValidateDate2(dateValue)){
+           setErrorFor(date,'Please check your date ,some of months ,value of months are snaller than 31 and February not last 29 every year')
+
+        }
+
+        else {
+            setSuccessFor(date,'valid')
+          counter++;
+
+        }
+        if (counter===6){
+            document.getElementById('form_').submit();
+        }
+
+
+    }
+
+
+    function setErrorFor(input,message) {
+        const formControl=input.parentElement;
+        const small=formControl.querySelector('small');
+        small.innerHTML=message;
+        small.className='error';
+
+    }
+    function setSuccessFor(input,message) {
+
+        const formControl=input.parentElement;
+        const small=formControl.querySelector('small');
+        small.innerHTML=message;
+        small.className='success';
+    }
+    function isMail(email){
+        let filter  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if (filter.test(email)) {
+            return true;
+        }
+        return false;
+    }
+    // Validates that the input string is a valid date formatted as "mm/dd/yyyy"
+    function isValidDate(dateString)
+    {
+
+        let parts = dateString.split("/");
+       let day = parseInt(parts[1], 10);
+       let month = parseInt(parts[0], 10);
+       let year = parseInt(parts[2], 10);
+
+
+        // Check the ranges of month and year
+        if(!(year < 1930 || year > 2020 || month == 0 || month > 12))
+            return true;
+
+    }
+    function isValidateDate2(dateString) {
+        let parts = dateString.split("/");
+        let day = parseInt(parts[1], 10);
+        let month = parseInt(parts[0], 10);
+       let year = parseInt(parts[2], 10);
+
+        // Check the ranges of month and year
+        let monthLength = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+
+        // Adjust for leap years
+        if(year % 400 == 0 || (year % 100 != 0 && year % 4 == 0))
+            monthLength[1] = 29;
+
+        // Check the range of the day
+        return day > 0 && day <= monthLength[month - 1];
+
+    }
+    function usernameValidation(input) {
+        //usename  only can include string and ıf there is double name space
+        if (/^[a-zA-Z\s]*$/.test(input)) {
+            return true;
+
+        }
+
+    }
+
+</script>
+
+</body>
